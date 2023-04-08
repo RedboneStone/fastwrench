@@ -5,17 +5,27 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
-    // "build:cjs": "rollup index.js --file bundle.js --format cjs",
-    // "build:umd": "rollup index.js --file bundle.js --format umd  --name 'myBundle'"
+    "build": "rollup -c -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-html": "^1.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-typescript": "^11.1.0",
+    "@types/lodash": "^4.14.192",
+    "futil": "^1.74.2",
+    "lodash": "^4.17.21",
     "rollup": "^3.20.2",
+    "rollup-plugin-dev": "^2.0.4",
     "tslib": "^2.5.0",
     "typescript": "^5.0.3"
+  },
+  "peerDependencies": {
+    "futil": "^1.74.2",
+    "lodash": "^4.17.21"
   }
 }

@@ -1,6 +1,6 @@
 
 
-export * from './hooks/multiply.js';
+export * from './src/hooks/multiply.js';
 // export * from './clipboard.directive';
 // export * from './common.module';
 // export * from './date-pipe';
