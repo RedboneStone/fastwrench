@@ -4,9 +4,18 @@
   "description": "A fast and simple wrench for front-end development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+    // "build:cjs": "rollup index.js --file bundle.js --format cjs",
+    // "build:umd": "rollup index.js --file bundle.js --format umd  --name 'myBundle'"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "rollup": "^3.20.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.3"
+  }
 }
